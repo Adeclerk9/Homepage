@@ -6,12 +6,7 @@ testing += 1;
 
 console.log(testing)
 
-console.log("favorite things")
+console.log("What are your favorite things?")
 
-const games = games
-const toys = toys
 
-// What are your favorite things?
-
-games + toys; "favorite things";
 
