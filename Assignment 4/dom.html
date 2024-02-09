@@ -1,0 +1,41 @@
+<html>
+<head>
+    <style>
+        p {
+            border: solid;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .hello{
+            background-color: red;
+        }
+        .goodbye{
+            background-color: white;
+        }
+        </style>
+</head>
+<body>
+    <button id="button1" onclick="changeToRed()">
+        Make Background Red
+    </button>  
+    <button id="button2" onclick="changeToWhite()">
+        Make Background White
+    </button>  
+        <div id="container">
+            <p id="colorful" class="goodbye">How are you today?  What is your name?</p>
+        </div>
+
+        <script src="dom.js"></script>
+        <script>
+        function changeToRed(){
+            document.getElementById("colorful").setAttribute("class", "hello");
+        };
+
+        function changeToWhite(){
+            document.getElementById("colorful").setAttribute("class", "goodbye");
+        }
+        </script>
+</body>
+</html>

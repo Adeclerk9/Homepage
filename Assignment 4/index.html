@@ -1,0 +1,26 @@
+<script>
+
+let list_of_numbers = [0,1,2,3,4,5,16,27];
+
+for(let current_position in list_of_numbers){
+    var current_number = list_of_numbers[current_position];
+    var future_position = current_position - 1;
+    if (current_position != list_of_numbers.length){
+        var new_number = current_number + list_of_numbers[future_position];
+        console.log(new_number);
+    }
+    else {
+        var new_number = current_number + 1;
+        console.log(new_number);
+    }
+}
+
+for(let i in list_of_numbers){
+    var current_number = list_of_numbers[i];
+    console.log(current_number * 2);
+}
+
+
+
+
+</script>
