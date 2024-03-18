@@ -19,6 +19,14 @@ var runner2Go = new Promise (function(resolve){
     }, 10000);
 })
 
+function getRunnersAndLoser() {
+    return {
+        resultsrunner1Go,
+        resultsrunner2Go,
+        resultsloser,
+    };
+}
+
 return await runner2Go
 
 return loser
@@ -27,3 +35,4 @@ return loser
 prom().then(function(a){
     console.log(a)
 })
+
