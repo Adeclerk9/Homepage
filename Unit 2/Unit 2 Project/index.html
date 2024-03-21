@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Enter </h1>
+    <button id="btn"> Enter Now</button>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('btn').addEventListener('click',
+
+            function () {
+                document.body.style.backgroundColor = 'red';
+                alert('Turn Red')
+            }
+        );
+     
+        class car  {
+            constructor(color,brand){
+                this.carcolor=color;
+                this.carbrand=brand;
+                this.carDes = function() {
+                    return this.carcolor + "  "+ this.carbrand;
+                }
+            }
+        }
+
+        mycar = new car("Red","Mazda");
+        document.getElementById("demo").innerHTML=mycar.carDes();
+
+    </script>
+</body>
+
+</html>
