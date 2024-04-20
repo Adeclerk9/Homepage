@@ -71,7 +71,6 @@ function breadthPush() {
 }
 
 
-
 for (i = 0; i < breadth.length; ++i) {
     let li = document.createElement('li');
     li.innerHTML = breadth[i];
