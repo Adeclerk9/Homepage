@@ -70,8 +70,6 @@ function breadthPush() {
     }  
 }
 
-console.log(breadth);
-console.log(depth);
 
 
 for (i = 0; i < breadth.length; ++i) {
