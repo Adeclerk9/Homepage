@@ -49,21 +49,30 @@ function breadth_search(x) {
     }
 }
 
-depth_search(leaf);
-breadth_search(leaf);
+function depthPush(){
+    depth_search(leaf)
+    const para_1 = document.getElementById('depth');
+    for (i = 0; i < depth.length; ++i) {
+        let li = document.createElement('li');
+        li.innerHTML = depth[i];
+        para_1.appendChild(li);
+    
+    }
+}
+function breadthPush() {
+    breadth_search(leaf)
+    const para_2 = document.getElementById('breadth');
+    for (i = 0; i < breadth.length; ++i) {
+        let li = document.createElement('li');
+        li.innerHTML = breadth[i];
+        para_2.appendChild(li);
+    
+    }  
+}
 
 console.log(breadth);
 console.log(depth);
 
-const para_1 = document.getElementById('depth');
-const para_2 = document.getElementById('breadth');
-
-for (i = 0; i < depth.length; ++i) {
-    let li = document.createElement('li');
-    li.innerHTML = depth[i];
-    para_1.appendChild(li);
-
-}
 
 for (i = 0; i < breadth.length; ++i) {
     let li = document.createElement('li');
