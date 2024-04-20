@@ -36,10 +36,17 @@ function depth_search(x) {
 }
 function breadth_search(x) {
     if (x === null) return;
-    breadth.push(x.value);
-    breadth_search(x.left);
-    breadth_search(x.right);
 
+    let y = [x];
+    while (y.length> 0){
+      let current_x = y.shift();
+
+      breadth.push(current_x.value);
+          if(current_x.left !== null)
+      y.push(current_x.left);
+          if(current_x.right !== null)
+      y.push(current_x.right);
+    }
 }
 
 depth_search(leaf);
