@@ -4,23 +4,28 @@
   </head>
   <body>
     <a-scene>
-        <a-entity 
+      <a-entity 
         camera look-controls wasd-controls="acceleration:200" 
-        position="0 1.6 0">
-    </a-entity>
+        position="0 1.6 0"></a-entity>
+     
         <a-torus-knot 
             position= "-1 1.6 -5" 
-            animation="elasticity: 300; dur: 2000; loop: true">
-        </a-torus-knot>
+            animation="elasticity: 300; dur: 2000; loop: true"
+            material="color: red"></a-torus-knot>
+      
         <a-light 
-            color="purple"  
-            position="-1 1 0">
-        </a-light>
+          position="-1 1 0"></a-light>
+          
+        <a-cylinder color="yellow" theta-start="50" theta-length="280" side="double"></a-cylinder>
+
         <a-ring 
-        color="teal" 
+        material="color: teal"
+        light="type:directional; castShadow:true;" 
+        animation="elasticity: 200"
+        position="3 3 3"
         radius-inner="1" 
         radius-outer="2">
-    </a-ring>
+      </a-ring>
     </a-scene>
   </body>
 </html>
